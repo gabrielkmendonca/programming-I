@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláraio de Cadastro de Cliente</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <main>
+        <form action="/register" method="post">
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <p><label for="name">Nome</label><br>
+                    <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                </p>
+                <p><label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </p>
+                <p><label for="cpf">CPF</label><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                </p>
+                <p><label for="tel">Telefone</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                </p>
+                <p><label for="sex">Sexo</label><br>
+                    <input type="radio" name="sex" id="m" checked>Masculino
+                    <input type="radio" name="sex" id="f">Feminino
+                </p>
+                <p>
+                    <label for="date">Data de Nascimento</label><br>
+                    <input type="date" name="date" id="date" value="2001-02-02" required>
+                </p>
+                <p>
+                    <label for="state">Estado</label><br>
+                    <select name="state" id="state" required>
+                        <option value="">-- Selecionar --</option>
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="ES">Espirito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </main>
+</body>
+
+</html>
